@@ -2,9 +2,7 @@
 import numpy as np
 
 from .base_mf_policy import BaseModelFreePolicy
-from .base_mb_policy import BaseModelBasedPolicy
 from .utils import value_to_state_id
-
 from .utils import STAND, HIT, DOUBLE
 
 class RandomPolicy(BaseModelFreePolicy):

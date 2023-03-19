@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 from envs.blackjack import BlackJackEnv
-from policy.eddie_policy import ScriptedEddiePolicy
+from policy.basic_policy import ScriptedEddiePolicy
 from policy.random_policy import RandomPolicy
 from policy.base_mf_policy import BaseModelFreePolicy
 from policy.eg_policy import EpsilonGreedyPolicy

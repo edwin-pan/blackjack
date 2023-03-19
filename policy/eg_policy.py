@@ -1,7 +1,6 @@
 import numpy as np
 
 from .base_mf_policy import BaseModelFreePolicy
-from .base_mb_policy import BaseModelBasedPolicy
 from .utils import STAND, HIT, DOUBLE
 
 
