@@ -12,5 +12,5 @@ setup(name='blackjack',
       install_requires=[
           'matplotlib==3.5.1',
           'scipy==1.7.3', 'tqdm==4.64.0',
-          'numpy==1.21.0',
+          'numpy==1.21.0', 'seaborn'
       ])
