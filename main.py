@@ -56,8 +56,8 @@ if __name__ == '__main__':
     # Play
     print("Running Training")
     record = []
-    mean = []
     for i in tqdm(range(args.num_games)):
+        r = 0
         while not env.done:
             
             # Record starting state
@@ -83,7 +83,6 @@ if __name__ == '__main__':
         if args.debug:
             print(f"Finished! rwd is {r}")
         record.append(r)
-        mean.append(np.mean(r))
 
         env.reset()
 
@@ -92,7 +91,6 @@ if __name__ == '__main__':
 
     print("Running Evaluation")
     eval_record = []
-    eval_mean = []
     player_policy.episode = 0 # No exploration on eval
     for i in tqdm(range(args.num_eval_games)):
         # Play game
@@ -104,7 +102,6 @@ if __name__ == '__main__':
             r = env.step(a)
 
         eval_record.append(r)
-        eval_mean.append(np.mean(r))
 
         env.reset()
 
